@@ -6,6 +6,8 @@ const astroSignSelect = document.getElementById('astro-sign-select');
 const searchForm = document.getElementById('search-form');
 
 /* State */
+let beanies = [];
+let astroSigns = [];
 
 /* Events */
 
