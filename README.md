@@ -1,27 +1,46 @@
-## The Golden Rule:
+# Week 02 From Scratch: Beanie Babies
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+## Goal
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+Build a beanie babies search page that uses a dropdown option to search beanie babies by astrological sign.
 
-## Making a plan
+## Project Planning
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
-1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
-1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+### HTML
 
-Additional considerations:
+on page load we will see:
+header
+form with a label, select (dropdown), button
+beanie babies (stored in a dynamic ul)
+State (changes we're tracking)
+beanie babies array
+astrological array
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+### Events
+
+page load
+display all beanie babies
+display all astrological signs in select dropdown
+form submit button
+use form data to filter astrological signs
+
+### Functions
+
+displayBeanies()
+displayAstroOptions()
+fetch-utils.js: getBeanies, getAstroSigns
+render-utils.js: renderBeanie, renderAstroSign
+
+## Workflow
+
+-   [] Project planning
+-   [] Build HTML (with hardcoded ul)
+-   [] Connect to Supabase with script
+-   [] Create fetch-utils.js and paste code from beanie babies README
+-   [] Start "Display list of 100 Beanies on page load"
+
+## Rubric
+
+-   [] Display list of 100 Beanies on page load 7
+-   [] Populate astroSign or Theme dropdown from supabase data 7
+-   [] Search Beanies by an attribute shows filtered list 6
