@@ -27,4 +27,10 @@ function displayBeanies() {
     }
 }
 
+function displayAstroOptions() {
+    for (let astroSign of astroSigns) {
+        const option = renderAstroSign(astroSign);
+        astroSignSelect.append(option);
+    }
+}
 // (don't forget to call any display functions you want to run on page load!)
