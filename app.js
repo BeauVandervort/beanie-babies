@@ -11,6 +11,13 @@ let beanies = [];
 let astroSigns = [];
 
 /* Events */
+window.addEventListener('load', async () => {
+    findBeanies();
+    const response = await getAstroSigns();
+    astroSigns = response.data;
+    displayAstroOptions();
+});
+
 async function findBeanies(astroSign) {
     const response = await getBeanies(astroSign);
     beanies = response.data;
