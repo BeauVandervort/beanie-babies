@@ -26,18 +26,19 @@ use form data to filter astrological signs
 
 ### Functions
 
-displayBeanies()
-displayAstroOptions()
-fetch-utils.js: getBeanies, getAstroSigns
-render-utils.js: renderBeanie, renderAstroSign
+-   displayBeanies()
+-   displayAstroOptions()
+-   fetch-utils.js: getBeanies, getAstroSigns
+-   render-utils.js: renderBeanie, renderAstroSign
 
 ## Workflow
 
--   [] Project planning
--   [] Build HTML (with hardcoded ul)
--   [] Connect to Supabase with script
--   [] Create fetch-utils.js and paste code from beanie babies README
+-   [x] Project planning
+-   [x] Build HTML (with hardcoded ul)
+-   [x] Create fetch-utils.js and paste code from beanie babies README
+-   [x] Connect to Supabase with script
 -   [] Start "Display list of 100 Beanies on page load"
+    -   get DOM elements
 
 ## Rubric
 

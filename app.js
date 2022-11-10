@@ -1,6 +1,9 @@
 /* Imports */
 
 /* Get DOM Elements */
+const beanieList = document.getElementById('beanie-list');
+const astroSignSelect = document.getElementById('astro-sign-select');
+const searchForm = document.getElementById('search-form');
 
 /* State */
 
